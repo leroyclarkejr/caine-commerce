@@ -29,3 +29,32 @@ export const TAGS = {
 export const HIDDEN_PRODUCT_TAG = 'nextjs-frontend-hidden';
 export const DEFAULT_OPTION = 'Default Title';
 export const SHOPIFY_GRAPHQL_API_ENDPOINT = '/api/2023-01/graphql.json';
+
+export const PATH_HOME = '/';
+export const PATH_AUDIO = '/audio';
+export const PATH_SHOP = '/shop';
+export const PATH_DATA = '/data';
+export const PATH_CART = '/cart';
+
+export const NavLinks: NavLinkProps[] = [
+  {
+    title: 'Shop',
+    href: PATH_SHOP,
+  },
+  {
+    title: 'Audio',
+    href: PATH_AUDIO,
+  },
+  {
+    title: 'Data',
+    href: PATH_DATA,
+  },
+  {
+    title: 'Cart',
+  },
+];
+
+interface NavLinkProps {
+  title: string;
+  href?: string;
+}

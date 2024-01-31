@@ -1,0 +1,58 @@
+@import '@/styles/_variables.css';
+
+.root {
+  background: none;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  line-height: 22px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: fit-content;
+}
+
+/* variants */
+.black {
+  background: var(--black);
+  color: var(--white);
+  border: 3px solid var(--white);
+  border-radius: 24px;
+}
+
+.white {
+  background: var(--white);
+  color: var(--black);
+  border: 3px solid var(--black);
+  border-radius: 24px;
+}
+
+
+
+.sm {
+  padding: 6px 24px;
+}
+
+.lg {
+  padding: 12px 36px;
+}
+
+.vcr {
+  font-family: var(--font-vcr);
+}
+
+.glyph {
+  font-family: var(--font-glyph);
+}
+.disabled {
+  color: var(--gray);
+  border-color: var(--gray);
+  opacity: 0.7;
+  cursor: default;
+}
+
+
+/* hover states */
+/* disabled states */
+/* active states */
