@@ -1,33 +1,33 @@
-@import '@/styles/_variables.scss';
+@import '@/styles/_variables.css';
 .root {
   text-decoration: none;
 }
 
 .vcr {
-  font-family: $font-vcr;
+  font-family: var(font-vcr);
   text-transform: uppercase;
 }
 
 .glyph {
-  font-family: $font-glyph;
+  font-family: var(font-glyph);
 }
 
 .offBit101 {
-  font-family: $font-off-bit-101;
+  font-family: var(font-off-bit-101);
 }
 
 .offBitDot {
-  font-family: $font-off-bit-dot;
+  font-family: var(font-off-bit-dot);
 }
 
 .featureMonoRegular {
-  font-family: $font-feature-mono-regular;
+  font-family: var(font-feature-mono-regular);
 }
 .featureMonoMedium {
-  font-family: $font-feature-mono-medium;
+  font-family: var(font-feature-mono-medium);
 }
 .featureMonoBold {
-  font-family: $font-feature-mono-bold;
+  font-family: var(font-feature-mono-bold);
 }
 /* alignment */
 .left {
