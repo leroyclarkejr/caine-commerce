@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Txt } from '../Txt';
+import { Txt } from '../txt';
 
 import { useModal } from '@/context/ModalContext';
 import styles from './Footer.module.css';

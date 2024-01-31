@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { TxtFontFamily } from '../Txt';
+import { TxtFontFamily } from '../txt';
 
 import styles from './Button.module.css';
 type IntrinsicButtonProps = JSX.IntrinsicElements['button'];

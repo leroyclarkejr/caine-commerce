@@ -1,7 +1,7 @@
-import classNames from 'classnames';
+import clsx from 'clsx';
 import React from 'react';
 
-import styles from './Txt.module.scss';
+import styles from './Txt.module.css';
 
 export type TxtFontFamily =
   | 'glyph'
@@ -27,36 +27,16 @@ export type TxtElement =
   | 'legend'
   | 'ul';
 
-export type TxtVariant =
-  | 'h1'
-  | 'h2'
-  | 'h3'
-  | 'h4'
-  | 'h5'
-  | 'h6'
-  | 'subtitle1'
-  | 'subtitle2'
-  | 'body1'
-  | 'body2'
-  | 'caption'
-  | 'label';
+export type TxtSize =
+  | '72'
+  | '52'
+  | '24'
+  | '21'
+  | '16'
+  | '14'
+  | '12'
 
-export const TxtVariantMapping: Record<TxtVariant, TxtElement> = {
-  h1: 'h1',
-  h2: 'h2',
-  h3: 'h3',
-  h4: 'h4',
-  h5: 'h5',
-  h6: 'h6',
-  subtitle1: 'h2',
-  subtitle2: 'h2',
-  body1: 'span',
-  body2: 'span',
-  caption: 'span',
-  label: 'span',
-};
-
-//create a type of all the colors available in my variables.scss file
+  
 export type TxtColor =
   | 'black'
   | 'white'
@@ -70,7 +50,7 @@ interface TxtProps extends JSX.IntrinsicAttributes {
   fontFamily?: TxtFontFamily;
   align?: TxtAlignment;
   as?: TxtElement;
-  variant?: TxtVariant;
+  size?: TxtSize;
   children: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
@@ -82,7 +62,7 @@ export function Txt(props: TxtProps): JSX.Element {
   const {
     fontFamily = 'vcr',
     as = 'p',
-    variant = 'body1',
+    size = '16',
     align,
     color = 'white',
     className,
@@ -90,13 +70,14 @@ export function Txt(props: TxtProps): JSX.Element {
     ...elementProps
   } = props;
 
-  const cssClass = classNames(
+  const cssClass = clsx(
     styles.root,
-    align ? styles[align] : undefined,
-    styles[variant],
     styles[fontFamily],
     styles[color],
-    { [styles.underline]: underline === true ? true : false },
+    styles[`size-${size}`],
+    align ? styles[align] : undefined,
+    styles[as],
+    { [styles.underline]: underline ? true : false },
     className
   );
 

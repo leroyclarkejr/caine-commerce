@@ -1,33 +1,38 @@
 @import '@/styles/_variables.css';
 .root {
   text-decoration: none;
+  padding: 0;
+  font-stretch: normal;
+  letter-spacing: 0.5px;
 }
 
+/* family */
+
 .vcr {
-  font-family: var(font-vcr);
+  font-family: var(--font-vcr);
   text-transform: uppercase;
 }
 
 .glyph {
-  font-family: var(font-glyph);
+  font-family: var(--font-glyph);
 }
 
 .offBit101 {
-  font-family: var(font-off-bit-101);
+  font-family: var(--font-off-bit-101);
 }
 
 .offBitDot {
-  font-family: var(font-off-bit-dot);
+  font-family: var(--font-off-bit-dot);
 }
 
 .featureMonoRegular {
-  font-family: var(font-feature-mono-regular);
+  font-family: var(--font-feature-mono-regular);
 }
 .featureMonoMedium {
-  font-family: var(font-feature-mono-medium);
+  font-family: var(--font-feature-mono-medium);
 }
 .featureMonoBold {
-  font-family: var(font-feature-mono-bold);
+  font-family: var(--font-feature-mono-bold);
 }
 /* alignment */
 .left {
@@ -46,123 +51,67 @@
   text-decoration: underline;
 }
 
-/* VARIANTS */
+/* sizes */
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  padding: 0;
-  font-stretch: normal;
-  letter-spacing: 0.5px;
-  color: var(--tfd-heading-color);
-}
-
-.h1.sansSerif,
-.h2.sansSerif,
-.h3.sansSerif,
-.h4.sansSerif,
-.h5.sansSerif,
-.h6.sansSerif {
-  font-weight: 900;
-}
-
-.h1.serif,
-.h2.serif,
-.h3.serif {
-  font-style: italic;
-  font-weight: 400;
-  font-family: var(--tfd-font-family-serif-headline);
-}
-
-.h1 {
+.size-72 {
   font-size: 72px;
   line-height: 88px;
 }
 
-.h2 {
+.size-52 {
   font-size: 52px;
   line-height: 69px;
 }
 
-.h3 {
+.size-24 {
   font-size: 24px;
   line-height: 53px;
 }
 
-.h4 {
+.size-21 {
   font-size: 21px;
-  line-height: 37px;
-}
-
-.h5 {
-  font-size: 21px;
+  font-weight: 500;
   line-height: 32px;
 }
 
-.h6 {
+.size-16 {
   font-size: 16px;
-  line-height: 26px;
-}
-
-.subtitle1 {
   font-weight: 500;
-  font-size: 21px;
-  line-height: 32px;
-}
-
-.subtitle2 {
-  font-weight: 500;
-  font-size: 16px;
   line-height: 26px;
 }
 
-.body1 {
-  line-height: 26px;
-  font-size: 16px;
-}
-
-.body2 {
+.size-14 {
   line-height: 16px;
   font-size: 14px;
 }
 
-.caption {
-  font-weight: 500;
-  line-height: 16px;
-  font-size: 14px;
-}
-
-.label {
+.size-12 {
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
 }
 
-// COLORS
+
+ /* COLORS */
 .black {
-  color: $black;
+  color: var(--black);
 }
 .white {
-  color: $white;
+  color: var(--white);
 }
 
 .blue {
-  color: $blue;
+  color: var(--blue);
 }
 .red {
-  color: $red;
+  color: var(--red);
 }
 .green {
-  color: $green;
+  color: var(--green);
 }
 .yellow {
-  color: $yellow;
+  color: var(--yellow);
 }
 .gray {
-  color: $gray;
+  color: var(--gray);
 }
-
-//FONT SIZES
