@@ -1,0 +1,168 @@
+@import '@/styles/_variables.scss';
+.root {
+  text-decoration: none;
+}
+
+.vcr {
+  font-family: $font-vcr;
+  text-transform: uppercase;
+}
+
+.glyph {
+  font-family: $font-glyph;
+}
+
+.offBit101 {
+  font-family: $font-off-bit-101;
+}
+
+.offBitDot {
+  font-family: $font-off-bit-dot;
+}
+
+.featureMonoRegular {
+  font-family: $font-feature-mono-regular;
+}
+.featureMonoMedium {
+  font-family: $font-feature-mono-medium;
+}
+.featureMonoBold {
+  font-family: $font-feature-mono-bold;
+}
+/* alignment */
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* VARIANTS */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  padding: 0;
+  font-stretch: normal;
+  letter-spacing: 0.5px;
+  color: var(--tfd-heading-color);
+}
+
+.h1.sansSerif,
+.h2.sansSerif,
+.h3.sansSerif,
+.h4.sansSerif,
+.h5.sansSerif,
+.h6.sansSerif {
+  font-weight: 900;
+}
+
+.h1.serif,
+.h2.serif,
+.h3.serif {
+  font-style: italic;
+  font-weight: 400;
+  font-family: var(--tfd-font-family-serif-headline);
+}
+
+.h1 {
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.h2 {
+  font-size: 52px;
+  line-height: 69px;
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 53px;
+}
+
+.h4 {
+  font-size: 21px;
+  line-height: 37px;
+}
+
+.h5 {
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.h6 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.subtitle1 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.subtitle2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.body1 {
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.body2 {
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.caption {
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+// COLORS
+.black {
+  color: $black;
+}
+.white {
+  color: $white;
+}
+
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+.yellow {
+  color: $yellow;
+}
+.gray {
+  color: $gray;
+}
+
+//FONT SIZES

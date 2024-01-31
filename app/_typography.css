@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Glyph';
+    font-style: normal;
+    src: url('/fonts/GlyphWorld-Flower.otf');
+  }
+  
+  @font-face {
+    font-family: 'VCR';
+    font-style: normal;
+    src: url('/fonts/VCR_OSD_MONO_.ttf');
+  }
+  @font-face {
+    font-family: 'Offbit101';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/fonts/OffBitTrial-101Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'OffbitDot';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/fonts/OffBitTrial-DotBold.ttf');
+  }
+  @font-face {
+    font-family: 'FeatureMonoReg';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/FeatureMono-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'FeatureMonoMedium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/FeatureMono-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: 'FeatureMonoBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/FeatureMono-Bold.ttf');
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  

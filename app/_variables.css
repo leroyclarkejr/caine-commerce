@@ -1,0 +1,45 @@
+:root {
+/* fonts */
+--font-vcr: 'VCR';
+--font-glyph: 'Glyph';
+--font-off-bit-dot: 'OffbitDot';
+--font-off-bit-101: 'Offbit101';
+--font-feature-mono-regular: 'FeatureMonoReg';
+--font-feature-mono-medium: 'FeatureMonoMedium';
+--font-feature-mono-bold: 'FeatureMonoBold';
+
+/* breakpoints */
+--xxs: 0px;
+--sm: 375px;
+--md: 710px;
+--lg: 1024px;
+--xl: 1400px;
+
+/* colors */
+--blue: #3096ff;
+--red: #ff3405;
+--green: #77db26;
+--yellow: #ffcc30;
+--black: #000;
+--white: #fff;
+--gray: #c2c2c2;
+--container-padding: 24px;
+
+/* spacing */
+--spacing-sm: 6px;
+--spacing-md: 12px;
+--spacing-lg: 24px;
+--spacing-xl: 36px;
+
+/* elements */
+--overlay-z-index: 8;
+--mini-cart-z-index: 10;
+--nav-z-index: 10;
+--app-bar-z-index: 5;
+--nav-height-desktop: 100px;
+--nav-height-mobile: 84px;
+--footer-height-desktop: 26px;
+--footer-height-mobile: 76px;
+}
+
+
