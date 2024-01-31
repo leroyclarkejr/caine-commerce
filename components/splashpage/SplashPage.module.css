@@ -1,0 +1,30 @@
+@import '@/styles/_variables.css';
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  padding: 0 var(--spacing-lg);
+}
+
+.img {
+  margin-bottom: 24px;
+}
+
+.copy {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.copy > p {
+  margin-bottom: 16px;
+}

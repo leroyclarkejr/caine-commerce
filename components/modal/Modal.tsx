@@ -1,8 +1,8 @@
 import { Txt } from '@/components';
 import { useModal } from '@/context/ModalContext';
 import { AnimatePresence, motion } from 'framer-motion';
-import { NewsletterSignupForm } from '../NewsletterSignupForm';
-import styles from './Modal.module.scss';
+import { NewsletterSignupForm } from '../newslettersignupform';
+import styles from './Modal.module.css';
 
 export function Modal() {
   const { openModal, closeModal, isOpen } = useModal();

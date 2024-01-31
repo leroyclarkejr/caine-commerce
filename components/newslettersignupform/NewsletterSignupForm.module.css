@@ -1,0 +1,31 @@
+@import '@/styles/_variables.css';
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label > input {
+  margin-top: 6px;
+}
+
+.input {
+  background-color: var(black);
+  line-height: 26px;
+  border: 2px solid var(white);
+  padding: 4px;
+  margin-bottom: 12px;
+}
+
+.submitButton {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
