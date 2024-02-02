@@ -1,1 +1,1 @@
-export * from './HomeHero';
+export * from './home-hero';

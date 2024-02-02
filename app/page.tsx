@@ -1,5 +1,6 @@
 import { Carousel } from 'components/carousel';
 import { ThreeItemGrid } from 'components/grid/three-items';
+import { HomeHero } from 'components/home-hero';
 import Footer from 'components/layout/footer';
 import { Suspense } from 'react';
 
@@ -15,6 +16,7 @@ export const metadata = {
 export default async function HomePage() {
   return (
     <>
+      <HomeHero />
       <ThreeItemGrid />
       <Suspense>
         <Carousel />
