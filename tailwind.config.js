@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-geist-sans)']
+        sans: ['VCR', 'sans-serif']
       },
+
       keyframes: {
         fadeIn: {
           from: { opacity: 0 },

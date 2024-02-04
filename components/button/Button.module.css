@@ -1,3 +1,13 @@
+:root .root {
+  --blue: #3096ff;
+  --red: #ff3405;
+  --green: #77db26;
+  --yellow: #ffcc30;
+  --black: #000;
+  --white: #fff;
+  --gray: #c2c2c2;
+}
+
 .root {
   background: none;
   text-decoration: none;
