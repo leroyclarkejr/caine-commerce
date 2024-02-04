@@ -1,5 +1,5 @@
+import { HomeHero } from '@/components';
 import { AllProductsGrid } from '@/components/grid/all-products-grid';
-import Footer from 'components/layout/footer';
 import { Suspense } from 'react';
 
 export const runtime = 'edge';
@@ -14,12 +14,11 @@ export const metadata = {
 export default async function HomePage() {
   return (
     <>
-      {/* <HomeHero /> */}
+      <Suspense>
+        <HomeHero />
+      </Suspense>
       <Suspense>
         <AllProductsGrid />
-        <Suspense>
-          <Footer />
-        </Suspense>
       </Suspense>
     </>
   );

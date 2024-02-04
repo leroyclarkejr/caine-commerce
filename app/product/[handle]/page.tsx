@@ -3,9 +3,8 @@ import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
 import { ProductTile } from 'components/grid/product-tile';
-import Footer from 'components/layout/footer';
-import { Gallery } from 'components/product/gallery';
 import { ProductDescription } from 'components/product/product-description';
+import { ProductGalleryThumbnails } from 'components/product/product-gallery-thumbnails';
 import { HIDDEN_PRODUCT_TAG } from 'lib/constants';
 import { getProduct, getProductRecommendations } from 'lib/shopify';
 import { Image } from 'lib/shopify/types';
@@ -84,7 +83,7 @@ export default async function ProductPage({ params }: { params: { handle: string
       <div className="mx-auto max-w-screen-2xl px-4">
         <div className="flex flex-col rounded-lg border border-neutral-200 bg-white p-8 md:p-12 lg:flex-row lg:gap-8 dark:border-neutral-800 dark:bg-black">
           <div className="h-full w-full basis-full lg:basis-4/6">
-            <Gallery
+            <ProductGalleryThumbnails
               images={product.images.map((image: Image) => ({
                 src: image.url,
                 altText: image.altText
@@ -100,9 +99,6 @@ export default async function ProductPage({ params }: { params: { handle: string
           <RelatedProducts id={product.id} />
         </Suspense>
       </div>
-      <Suspense>
-        <Footer />
-      </Suspense>
     </>
   );
 }
@@ -132,6 +128,7 @@ async function RelatedProducts({ id }: { id: string }) {
                 src={product.featuredImage?.url}
                 fill
                 sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
+                containerClassName="relative h-full w-full"
               />
             </Link>
           </li>
