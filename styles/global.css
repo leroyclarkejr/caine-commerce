@@ -35,7 +35,7 @@ body {
   font-family: 'VCR';
   font-size: 16px;
   line-height: 26px;
-  background-color: black;
+  background-color: #000;
   color: white;
   transition: all 0.2s;
 }
