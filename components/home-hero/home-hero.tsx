@@ -1,6 +1,7 @@
 'use client';
 
 import { Txt } from '@/components';
+import clsx from 'clsx';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 // import { ResponsiveImage } from '../ResponsiveImage';
 import moment from 'moment-timezone';
@@ -39,7 +40,12 @@ export function HomeHero() {
   //   return () => clearInterval(interval);
   // }, []);
   return (
-    <section className={styles.section}>
+    <section
+      className={clsx(
+        styles.section,
+        'relative mb-9 flex h-full w-full flex-col items-center justify-center overflow-hidden px-0 py-6'
+      )}
+    >
       <HeroVideo />
     </section>
   );
@@ -69,7 +75,7 @@ const HeroVideo = () => {
       >
         <source src="/videos/infrared-video.mp4"></source>
       </video>
-      <div className={styles.heatBar}></div>
+      <div className={clsx(styles.heatBar, 'mb-1.5 mt-6 h-4 ')}></div>
       <Txt size="24" className={styles.title}>
         {currentTime}
       </Txt>

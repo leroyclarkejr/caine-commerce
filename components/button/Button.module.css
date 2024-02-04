@@ -1,5 +1,3 @@
-@import '@/styles/_variables.css';
-
 .root {
   background: none;
   text-decoration: none;
@@ -28,8 +26,6 @@
   border-radius: 24px;
 }
 
-
-
 .sm {
   padding: 6px 24px;
 }
@@ -51,7 +47,6 @@
   opacity: 0.7;
   cursor: default;
 }
-
 
 /* hover states */
 /* disabled states */

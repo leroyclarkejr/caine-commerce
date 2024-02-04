@@ -1,5 +1,3 @@
-@import '@/styles/_variables.css';
-
 .root {
   background: white;
   color: black;
@@ -29,21 +27,18 @@
 }
 
 @media (min-width: var(--md)) {
-    .root {
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: var(--spacing-md) var(--spacing-lg);
-    }
+  .root {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
 
-    .contact {
-        margin-bottom: 0;
-    }
-   
-    .nav {
-      flex-wrap: nowrap;
-    }
-    
+  .contact {
+    margin-bottom: 0;
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+  }
 }
-
-
