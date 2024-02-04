@@ -16,19 +16,14 @@ export interface ButtonProps extends IntrinsicButtonProps {
 }
 
 export function Button(props: ButtonProps) {
-  const {
-    variant = 'black',
-    size = 'sm',
-    fontFamily = 'vcr',
-    ...restProps
-  } = props;
+  const { variant = 'black', size = 'sm', fontFamily = 'vcr', ...restProps } = props;
   const className = clsx(
     styles.root,
     styles[variant],
     styles[size],
     styles[fontFamily],
     {
-      [styles.disabled]: props.disabled,
+      [styles.disabled as string]: props.disabled || props['aria-disabled']
     },
     props.className
   );
