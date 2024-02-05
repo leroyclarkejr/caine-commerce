@@ -1,7 +1,6 @@
-
-import classNames from 'classnames';
+import clsx from 'clsx';
 import Image, { ImageProps } from 'next/image';
-import styles from './ResponsiveImage.module.css';
+import styles from './responsive-image.module.css';
 
 export interface ResponsiveImageProps extends ImageProps {
   maxWidth?: number | [number];
@@ -12,20 +11,10 @@ export interface ResponsiveImageProps extends ImageProps {
 }
 
 export function ResponsiveImage(props: ResponsiveImageProps) {
-  const {
-    maxWidth,
-    alt = 'Default',
-    width = 2,
-    height = 3,
-    containerProps,
-    ...imageProps
-  } = props;
+  const { maxWidth, alt = 'Default', width = 2, height = 3, containerProps, ...imageProps } = props;
 
   return (
-    <div
-      className={classNames(styles.root, containerProps)}
-      style={{ maxWidth: `${maxWidth}px` }}
-    >
+    <div className={clsx(styles.root, containerProps)} style={{ maxWidth: `${maxWidth}px` }}>
       <Image
         alt={alt}
         width={width}
@@ -33,7 +22,7 @@ export function ResponsiveImage(props: ResponsiveImageProps) {
         sizes="100vw"
         style={{
           width: '100%',
-          height: 'auto',
+          height: 'auto'
         }}
         {...imageProps}
       />
