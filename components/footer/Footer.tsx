@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { Txt } from '../txt';
 
-import { useModal } from '@/context/ModalContext';
+// import { useModal } from '@/context/ModalContext';
 import styles from './Footer.module.css';
 
 export function Footer() {
-  const { openModal } = useModal();
+  // const { openModal } = useModal();
   const footerLinks = [
     {
       title: 'Terms',
@@ -15,7 +15,8 @@ export function Footer() {
       title: 'Mailing',
       href: null,
       onClick: () => {
-        openModal();
+        // openModal();
+        console.log('open');
       }
     },
     {

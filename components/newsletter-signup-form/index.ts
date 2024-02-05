@@ -1,1 +1,1 @@
-export * from './NewsletterSignupForm';
+export * from './newsletter-signup-form';

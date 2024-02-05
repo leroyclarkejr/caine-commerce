@@ -13,9 +13,9 @@
 }
 
 .input {
-  background-color: var(black);
+  background-color: black;
   line-height: 26px;
-  border: 2px solid var(white);
+  border: 2px solid white;
   padding: 4px;
   margin-bottom: 12px;
 }

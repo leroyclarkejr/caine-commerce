@@ -1,41 +1,37 @@
 import { Txt } from '@/components';
-import { useModal } from '@/context/ModalContext';
+// import { useModal } from '@/context/ModalContext';
 import { AnimatePresence, motion } from 'framer-motion';
-import { NewsletterSignupForm } from '../newsletter-signup-form';
+// import { NewsletterSignupForm } from '../newsletter-signup-form';
 import styles from './Modal.module.css';
 
 export function Modal() {
-  const { closeModal, isOpen } = useModal();
+  // const { closeModal, isOpen } = useModal();
 
   // const handleOpen = () => {
   //   openModal();
   // };
 
-  const handleClose = () => {
-    closeModal();
-  };
+  // const handleClose = () => {
+  //   closeModal();
+  // };
 
   return (
     <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          className={styles.root}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <motion.div className={styles.content} initial={{ y: '24px' }} animate={{ y: 0 }}>
-            <div className={styles.header}>
-              <Txt className={styles.title}>Mailing List</Txt>
+      <motion.div
+        className={styles.root}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <motion.div className={styles.content} initial={{ y: '24px' }} animate={{ y: 0 }}>
+          <div className={styles.header}>
+            <Txt className={styles.title}>Mailing List</Txt>
 
-              <button className={styles.closeBtn} onClick={handleClose}>
-                X
-              </button>
-            </div>
-            <NewsletterSignupForm />
-          </motion.div>
+            <button className={styles.closeBtn}>X</button>
+          </div>
+          {/* <NewsletterSignupForm /> */}
         </motion.div>
-      )}
+      </motion.div>
     </AnimatePresence>
   );
 }

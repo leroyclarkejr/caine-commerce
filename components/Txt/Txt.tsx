@@ -27,24 +27,9 @@ export type TxtElement =
   | 'legend'
   | 'ul';
 
-export type TxtSize =
-  | '72'
-  | '52'
-  | '24'
-  | '21'
-  | '16'
-  | '14'
-  | '12'
+export type TxtSize = '72' | '52' | '24' | '21' | '16' | '14' | '12';
 
-  
-export type TxtColor =
-  | 'black'
-  | 'white'
-  | 'gray'
-  | 'red'
-  | 'green'
-  | 'yellow'
-  | 'blue';
+export type TxtColor = 'black' | 'white' | 'gray' | 'red' | 'green' | 'yellow' | 'blue';
 
 interface TxtProps extends JSX.IntrinsicAttributes {
   fontFamily?: TxtFontFamily;
@@ -77,7 +62,7 @@ export function Txt(props: TxtProps): JSX.Element {
     styles[`size-${size}`],
     align ? styles[align] : undefined,
     styles[as],
-    { [styles.underline]: underline ? true : false },
+    { [styles.underline as string]: underline ? true : false },
     className
   );
 
