@@ -1,1 +1,1 @@
-export * from './SplashPage';
+export * from './splash-page';

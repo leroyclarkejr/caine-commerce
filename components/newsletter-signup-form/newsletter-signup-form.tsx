@@ -5,13 +5,11 @@ import styles from './NewsletterSignupForm.module.scss';
 export function NewsletterSignupForm() {
   const url = process.env.MAILCHIMP_SUBSCRIPTION_URL;
 
-  const { loading, error, success, message, handleSubmit } = useMailChimpForm(
-    url as string
-  );
+  const { loading, error, success, message, handleSubmit } = useMailChimpForm(url as string);
 
   const { fields, handleFieldChange } = useFormFields({
     EMAIL: '',
-    NAME: '',
+    NAME: ''
   });
 
   return (
@@ -42,12 +40,7 @@ export function NewsletterSignupForm() {
           className={styles.input}
         />
       </label>
-      <Button
-        size="sm"
-        type="submit"
-        disabled={loading}
-        className={styles.submitButton}
-      >
+      <Button size="sm" type="submit" disabled={loading} className={styles.submitButton}>
         Subscribe
       </Button>
       {loading && <div className="loading">Submitting...</div>}

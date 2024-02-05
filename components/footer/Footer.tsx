@@ -9,27 +9,27 @@ export function Footer() {
   const footerLinks = [
     {
       title: 'Terms',
-      href: '/terms',
+      href: '/terms'
     },
     {
       title: 'Mailing',
       href: null,
       onClick: () => {
         openModal();
-      },
+      }
     },
     {
       title: 'Twitter',
-      href: 'https://twitter.com',
+      href: 'https://twitter.com'
     },
     {
       title: 'Instagram',
-      href: 'https://instagram.com/cainecasket',
+      href: 'https://instagram.com/cainecasket'
     },
     {
       title: 'Discord',
-      href: 'https://discord.com',
-    },
+      href: 'https://discord.com'
+    }
   ];
 
   return (
