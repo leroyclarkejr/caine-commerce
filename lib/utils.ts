@@ -41,11 +41,9 @@ export const validateEnvironmentVariables = () => {
 export const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
-  minimumFractionDigits: 2,
+  minimumFractionDigits: 2
 });
-
 
 export function enableWhiteBg(route: string) {
   return route === '/audio' || route === '/data';
 }
-

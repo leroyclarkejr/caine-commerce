@@ -39,19 +39,19 @@ export const PATH_CART = '/cart';
 export const NavLinks: NavLinkProps[] = [
   {
     title: 'Shop',
-    href: PATH_SHOP,
+    href: PATH_SHOP
   },
   {
     title: 'Audio',
-    href: PATH_AUDIO,
+    href: PATH_AUDIO
   },
   {
     title: 'Data',
-    href: PATH_DATA,
+    href: PATH_DATA
   },
   {
-    title: 'Cart',
-  },
+    title: 'Cart'
+  }
 ];
 
 interface NavLinkProps {
