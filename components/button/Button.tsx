@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import { TxtFontFamily } from '../txt';
 
-import styles from './Button.module.css';
+import styles from './button.module.css';
 type IntrinsicButtonProps = JSX.IntrinsicElements['button'];
 
 type ButtonVariant = 'black' | 'white';

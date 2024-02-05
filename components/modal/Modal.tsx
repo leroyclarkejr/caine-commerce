@@ -2,7 +2,7 @@ import { Txt } from '@/components';
 // import { useModal } from '@/context/ModalContext';
 import { AnimatePresence, motion } from 'framer-motion';
 // import { NewsletterSignupForm } from '../newsletter-signup-form';
-import styles from './Modal.module.css';
+import styles from './modal.module.css';
 
 export function Modal() {
   // const { closeModal, isOpen } = useModal();

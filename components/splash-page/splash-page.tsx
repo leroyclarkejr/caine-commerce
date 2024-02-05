@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { Button, ResponsiveImage, Txt } from '@/components';
 import { AnimatePresence, motion } from 'framer-motion';
-import styles from './SplashPage.module.css';
+import styles from './splash-page.module.css';
 
 interface SplashPageProps {
   onEnterClick?: () => void | undefined;

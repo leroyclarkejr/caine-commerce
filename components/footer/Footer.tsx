@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Txt } from '../txt';
 
 // import { useModal } from '@/context/ModalContext';
-import styles from './Footer.module.css';
+import styles from './footer.module.css';
 
 export function Footer() {
   // const { openModal } = useModal();

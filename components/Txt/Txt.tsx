@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 
-import styles from './Txt.module.css';
+import styles from './txt.module.css';
 
 export type TxtFontFamily =
   | 'glyph'

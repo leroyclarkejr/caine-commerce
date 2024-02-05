@@ -1,6 +1,6 @@
 import { Button, Txt } from '@/components';
 import { useFormFields, useMailChimpForm } from 'use-mailchimp-form';
-import styles from './NewsletterSignupForm.module.scss';
+import styles from './newsletter-signup-form.module.css';
 
 export function NewsletterSignupForm() {
   const url = process.env.MAILCHIMP_SUBSCRIPTION_URL;
