@@ -2,7 +2,7 @@
 
 import { Txt } from '@/components';
 import clsx from 'clsx';
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react';
 // import { ResponsiveImage } from '../ResponsiveImage';
 import moment from 'moment-timezone';
 import styles from './home-hero.module.css';
@@ -46,7 +46,9 @@ export function HomeHero() {
         'relative mb-9 flex h-full w-full flex-col items-center justify-center overflow-hidden px-0 py-6'
       )}
     >
-      <HeroVideo />
+      <Suspense>
+        <HeroVideo />
+      </Suspense>
     </section>
   );
 }

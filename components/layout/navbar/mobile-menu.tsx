@@ -35,7 +35,7 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
       <button
         onClick={openMobileMenu}
         aria-label="Open mobile menu"
-        className="flex h-12 w-12 items-center justify-center text-black transition-colors md:hidden dark:border-neutral-700 dark:text-white"
+        className=" flex h-12 w-12 items-center justify-center text-black transition-colors md:hidden dark:border-neutral-700 dark:text-white"
       >
         <Hamburger />
       </button>
@@ -62,16 +62,15 @@ export default function MobileMenu({ menu }: { menu: Menu[] }) {
             leaveTo="translate-x-[-100%]"
           >
             <Dialog.Panel className="fixed bottom-0 left-0 right-0 top-0 flex h-full w-full flex-col bg-white pb-6 dark:bg-black">
-              <div className="p-4">
+              <div className="flex h-full flex-col justify-center p-4 px-6">
                 <button
-                  className="mb-4 flex h-11 w-11 items-center justify-center text-black transition-colors dark:border-neutral-700 dark:text-white"
+                  className="absolute left-4 top-4 mb-4 flex h-11 w-11 items-center justify-center text-black transition-colors hover:scale-110 dark:border-neutral-700 dark:text-white"
                   onClick={closeMobileMenu}
                   aria-label="Close mobile menu"
                 >
                   <XMarkIcon className="h-6" />
                 </button>
 
-                <div className="mb-4 w-full">{/* <Search /> */}</div>
                 {menu.length ? (
                   <ul className="flex w-full flex-col">
                     {menu.map((item: Menu) => (

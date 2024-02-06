@@ -1,5 +1,5 @@
+import { Txt } from '@/components';
 import Link from 'next/link';
-import { Txt } from '../txt';
 
 // import { useModal } from '@/context/ModalContext';
 

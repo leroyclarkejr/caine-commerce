@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from '@/components';
 import { Dialog, Transition } from '@headlessui/react';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 import Price from 'components/price';
@@ -8,6 +9,7 @@ import type { Cart } from 'lib/shopify/types';
 import { createUrl } from 'lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import CloseCart from './close-cart';
 import { DeleteItemButton } from './delete-item-button';
@@ -23,6 +25,14 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
   const quantityRef = useRef(cart?.totalQuantity);
   const openCart = () => setIsOpen(true);
   const closeCart = () => setIsOpen(false);
+
+  const router = useRouter();
+
+  const handleCheckoutClick = () => {
+    if (cart) {
+      router.push(cart.checkoutUrl);
+    }
+  };
 
   useEffect(() => {
     // Open cart modal when quantity changes.
@@ -174,12 +184,9 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
                       />
                     </div>
                   </div>
-                  <a
-                    href={cart.checkoutUrl}
-                    className="block w-full rounded-full bg-blue-600 p-3 text-center text-sm font-medium text-white opacity-90 hover:opacity-100"
-                  >
+                  <Button onClick={handleCheckoutClick} className="block">
                     Proceed to Checkout
-                  </a>
+                  </Button>
                 </div>
               )}
             </Dialog.Panel>
