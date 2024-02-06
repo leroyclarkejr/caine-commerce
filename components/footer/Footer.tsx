@@ -2,10 +2,12 @@ import Link from 'next/link';
 import { Txt } from '../txt';
 
 // import { useModal } from '@/context/ModalContext';
-import styles from './footer.module.css';
 
 export function Footer() {
   // const { openModal } = useModal();
+
+  const contactEmail = process.env.CONTACT_EMAIL;
+
   const footerLinks = [
     {
       title: 'Terms',
@@ -13,11 +15,7 @@ export function Footer() {
     },
     {
       title: 'Mailing',
-      href: null,
-      onClick: () => {
-        // openModal();
-        console.log('open');
-      }
+      href: null
     },
     {
       title: 'Twitter',
@@ -34,24 +32,24 @@ export function Footer() {
   ];
 
   return (
-    <footer className={styles.root}>
-      <Link href="mailo:research@earthII.world" className={styles.contact}>
+    <footer className="flex w-full flex-col items-center justify-center rounded-t-3xl bg-white px-3 pb-9 pt-1.5 text-black md:flex-nowrap md:items-center md:justify-between md:px-6 md:py-3">
+      <Link href={`mailo:${contactEmail}`} className="mb-3 md:mb-0">
         <Txt color="gray" fontFamily="vcr">
-          research@earthII.world
+          {contactEmail}
         </Txt>
       </Link>
 
-      <nav className={styles.nav}>
+      <nav className="ml-3 flex flex-row flex-wrap justify-center md:flex-nowrap">
         {footerLinks.map((link, i) =>
           link.href ? (
-            <Link key={i} href={link.href} className={styles.link}>
+            <Link key={i} href={link.href} className="ml-3 first:ml-0" target="_blank">
               <Txt fontFamily="vcr" color="black">
                 {' '}
                 {link.title}
               </Txt>
             </Link>
           ) : (
-            <span key={i} onClick={link.onClick} className={styles.link}>
+            <span key={i} className="ml-3 first:ml-0">
               <Txt fontFamily="vcr" color="black">
                 {' '}
                 {link.title}

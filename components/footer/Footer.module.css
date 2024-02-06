@@ -11,21 +11,6 @@
   box-shadow: 4px 12px 18px 4px rgba(0, 0, 0, 0.4);
 }
 
-.contact {
-  margin-bottom: var(--spacing-md);
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.nav .link:not(:first-child) {
-  margin-left: var(--spacing-md);
-}
-
 @media (min-width: var(--md)) {
   .root {
     flex-flow: row nowrap;
